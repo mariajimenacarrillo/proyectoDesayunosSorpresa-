@@ -1,0 +1,112 @@
+html, body {
+    margin: 0 auto;
+    max-width: 55rem;
+    background-color: rgb(93, 100, 100);
+        
+}
+.gradientelineal{
+    background-image: linear-gradient(to bottom, pink, grey, yellow);
+}
+
+.grid-container {
+    padding: 2rem;
+    display: grid;
+    grid-template-areas:
+        'header nav nav'
+        'main main main'
+        'footer footer footer';
+}
+
+header {
+    grid-area: header;
+    background-image: -o-linear-gradient(to left,);
+}
+
+/* LOGO */
+header h1 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* TAGLINE */
+header p {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+main h2{
+    font-size: 2rem;
+}
+
+nav li, footer li {
+    list-style: none;
+    padding: 0.5rem;
+    background-color: rgb(170, 134, 122);
+    height: 2rem;
+    margin: 0 0.25rem;
+}
+
+nav li:hover {
+    background-color: rgb(168, 151, 163);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(119, 14, 79);
+}
+
+a:hover {
+    color: rgb(153, 27, 69);
+}
+
+a:visited {
+    color: rgb(0, 111, 139);
+}
+
+.producto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article.producto {
+    width: 12rem;
+    border: solid 1px black;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+article.producto h3, article.producto p {
+    padding: 0;
+    margin: 0;
+}
+
+#colorDeFondo{
+    background-image: radial-gradient(color 20% pink,yellow 80%);
+}
+@media (max-width: 600px){
+    .grid-container {
+        grid-template-areas: 
+            'header header header'
+            'nav nav nav'
+            'main main main'
+            'footer footer footer';
+    }
+
+}
